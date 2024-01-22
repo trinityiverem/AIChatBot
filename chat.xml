@@ -1,0 +1,96 @@
+<aiml version = "1.0.1" encoding = "UTF-8">
+<!-- chat.aiml -->
+  <!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! Who are you?</template> </category>
+
+<category><pattern> I AM *</pattern>
+<template>
+	Hello <set name = "username"> <star/></set> , do you want to learn about the solar system?
+</template>
+</category>
+
+<category><pattern>YES I DO </pattern>
+<template>Ask away then</template></category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+   <category>
+      <pattern>HELLO</pattern>
+
+      <template>Hello User! Any questions?</template>
+
+   </category>
+<category>
+      <pattern>I'M FINE, THANKS HOW ARE YOU?</pattern>
+
+      <template>I'm great, thanks! Do you have any questions about the solar system?</template>
+
+   </category>
+  <category><pattern> BYE </pattern>
+  <template>#0$Bye! <get name = "username"/> Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE </srai></template></category>
+
+<category>
+  <pattern>WHAT IS THE SOLAR SYSTEM</pattern>
+  <template>
+    The solar system is the collection of planets, moons, and other celestial objects that orbit around the sun. Would you like more information about a specific planet?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT THE SUN</pattern>
+  <template>
+    The sun is a star at the center of the solar system. It is by far the largest object in the solar system, and it contains more than 99% of the total mass of the entire solar system. The sun's energy powers life on Earth and drives the weather and climate. Would you like more information about another object in the solar system?
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT ARE THE PLANETS IN THE SOLAR SYSTEM</pattern>
+  <template>
+    There are eight planets in the solar system, in order from the sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet has its own unique characteristics and features. Would you like more information about a specific planet?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT MERCURY</pattern>
+  <template>
+    Mercury is the smallest planet in the solar system, and it is also the closest planet to the sun. It has a rocky surface and no atmosphere, which means that it experiences extreme temperature variations between its day and night sides. Would you like more information about another planet in the solar system?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT VENUS</pattern>
+  <template>
+    Venus is the second planet from the sun, and it is similar in size and composition to Earth. However, its thick atmosphere traps heat and causes a runaway greenhouse effect, making it the hottest planet in the solar system. Its surface is covered in volcanoes, mountains, and vast plains of hardened lava. Would you like more information about another planet in the solar system?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT EARTH</pattern>
+  <template>
+    Earth is the third planet from the sun, and it is the only known planet in the universe that is capable of supporting life. It has a complex atmosphere that sustains a rich variety of plant and animal life, and it is covered in oceans, continents, and polar ice caps. Would you like more information about another planet in the solar system?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT MARS</pattern>
+  <template>
+    Mars is the fourth planet from the sun, and it is known as the "Red Planet" because of its rusty, reddish appearance. It has a thin atmosphere and a cold, rocky surface that is covered in dust and features such as mountains, valleys, and ancient riverbeds. Would you like more information about another planet in the solar system?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT JUPITER</pattern>
+  <template>
+    Jupiter is the largest planet in the solar system, and it is known for its colorful bands of clouds and its Great Red Spot, a massive storm that has been raging for centuries. It is a gas giant with no solid surface, and it has a complex system of moons and rings. Would you like more information
+  </template>
+</category>
+
+</aiml>
